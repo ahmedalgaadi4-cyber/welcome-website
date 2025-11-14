@@ -1,0 +1,68 @@
+/* تصميم خلفية الصفحة */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    background: linear-gradient(135deg, #66b71a, #182848);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+}
+
+/* الصندوق الزجاجي */
+#username {
+    width: 90%;            /* يكبر الصندوق بشكل واضح */
+    padding: 12px 15px;    /* يجعل ارتفاعه أكبر */
+    font-size: 18px;       /* تكبير النص */
+    border-radius: 10px;   /* حواف منحنية */
+    border: none;          /* إزالة الحدود الحادة */
+    outline: none;         /* إزالة الإطار الأزرق عند الضغط */
+}
+
+
+/* زر الإرسال */
+#submitBtn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+
+    background: #111827;
+    color: white;
+    border: none;
+
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#submitBtn:hover {
+    background: #1f2937;
+}
+
+/* إخفاء الرسالة */
+.hidden {
+    display: none;
+}
+
+/* الشريط العلوي */
+#welcomeMessage {
+    position: fixed;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.5s ease;
+}
